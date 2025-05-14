@@ -21,6 +21,16 @@ export const postType = defineType({
       validation: (rule) => rule.required(),
     }),
     defineField({
+      name: 'service',
+      type: 'string',
+      validation: (rule) => rule.required(),
+    }),
+    defineField({
+      name: 'client',
+      type: 'string',
+      validation: (rule) => rule.required(),
+    }),
+    defineField({
       name: 'about',
       type: 'string',
       validation: (rule) => rule.min(300).max(550).required(),
@@ -82,7 +92,17 @@ export const postType = defineType({
       type: 'array',
       of: [
         defineArrayMember({
-          type: 'string',
+          type: 'document',
+          fields: [
+            defineField({
+              name: 'icon',
+              type: 'string',
+            }),
+            defineField({
+              name: 'name',
+              type: 'string',
+            }),
+          ],
         }),
       ],
       validation: (rule) => rule.required(),
