@@ -1,7 +1,14 @@
-import BlogWrapper from '@/components/custom-ui/BlogWrapper';
-import { Separator } from '@/components/ui/separator';
-import { Skeleton } from '@/components/ui/skeleton';
-import React, { Suspense } from 'react'
+import BlogWrapper from "@/components/custom-ui/BlogWrapper";
+import { Separator } from "@/components/ui/separator";
+import { Skeleton } from "@/components/ui/skeleton";
+import type { Metadata } from "next";
+import React, { Suspense } from "react";
+
+export const metadata: Metadata = {
+  title: "Blogs - Kayode Portfolio",
+  description:
+    "Logging my journey through lines of code, persistent bugs, breakthrough moments, and everything in between.",
+};
 
 const page = () => {
   return (
@@ -23,6 +30,6 @@ const page = () => {
       <Separator />
     </section>
   );
-}
+};
 
-export default page
+export default page;

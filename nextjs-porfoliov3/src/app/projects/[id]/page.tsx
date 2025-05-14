@@ -15,6 +15,32 @@ type Props = {
   params: Promise<{ id: string }>;
 };
 
+export async function generateMetadata({ params }: {params: Promise<{id: string}>}) {
+
+  const projectDetials = (await client.fetch(
+    PROJECT_QUERY_BY_ID,
+    await params,
+    option
+  )) as Project;
+
+  if (!projectDetials) {
+    return {
+      title: "Project Not Found",
+      description: "The project you are looking for does not exist.",
+    };
+  }
+
+  const title = `${projectDetials.name}`;
+  const description = projectDetials.description;
+
+  
+  return {
+    title: title,
+    description: description,
+  };
+}
+
+
 export default async function Page({ params }: Props): Promise<JSX.Element> {
   const projectDetials = await client.fetch(
     PROJECT_QUERY_BY_ID,

@@ -1,7 +1,14 @@
-import ProjectsGridWrapper from '@/components/custom-ui/ProjectsGridWrapper';
-import ProjectSkeleton from '@/components/custom-ui/ProjectSkeleton';
-import { Separator } from '@/components/ui/separator';
-import React, { Suspense } from 'react'
+import ProjectsGridWrapper from "@/components/custom-ui/ProjectsGridWrapper";
+import ProjectSkeleton from "@/components/custom-ui/ProjectSkeleton";
+import { Separator } from "@/components/ui/separator";
+import type { Metadata } from "next";
+import React, { Suspense } from "react";
+
+export const metadata: Metadata = {
+  title: "Projects - Kayode Portfolio",
+  description:
+    "Explore modern web experiences that turn bold ideas into fast, functional, and responsive products.",
+};
 
 const page = () => {
   return (
@@ -18,9 +25,9 @@ const page = () => {
       <Suspense fallback={<ProjectSkeleton />}>
         <ProjectsGridWrapper type="AllProjects" />
       </Suspense>
-      <Separator/>
+      <Separator />
     </section>
   );
-}
+};
 
-export default page
+export default page;

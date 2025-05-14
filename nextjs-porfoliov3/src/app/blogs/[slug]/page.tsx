@@ -9,6 +9,31 @@ import { SanityDocument } from "next-sanity";
 import Image from "next/image";
 import React from "react";
 
+export async function generateMetadata({ params }: {params: Promise<{slug: string}>}) {
+
+  const blogDetails = await client.fetch<SanityDocument>(
+    BLOG_QUERY_BY_SLUG,
+    await params,
+    option
+  );
+
+  if (!blogDetails) {
+    return {
+      title: "Project Not Found",
+      description: "The project you are looking for does not exist.",
+    };
+  }
+
+  const title = `${blogDetails.author}`;
+  const description = blogDetails.title;
+
+  
+  return {
+    title: title,
+    description: description,
+  };
+}
+
 const page = async ({ params }: { params: Promise<{ slug: string }> }) => {
 
   const blogDetails = await client.fetch<SanityDocument>(
