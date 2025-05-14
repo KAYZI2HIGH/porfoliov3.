@@ -13,12 +13,12 @@ const FavouriteProjects = () => {
           Favourite Work
         </h1>
         <Button
-          variant={"ghost"}
-          className="opacity-60 hover:opacity-90 transition duration-200 ease-in-out cursor-pointer"
+          variant={"link"}
+          className="opacity-60 hover:opacity-90 transition duration-200 ease-in-out cursor-pointer max-sm:underline max-sm:underline-offset-4"
           asChild
         >
           <Link href={"/projects"}>
-            All Projects <ArrowRight />
+            All Projects <ArrowRight className="hidden sm:flex"/>
           </Link>
         </Button>
       </div>

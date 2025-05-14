@@ -6,11 +6,11 @@ const Hero = () => {
   return (
     <div className="space-y-6">
       <div>
-        <h1 className="text-[35px] md:text-[40px] font-semibold tracking-wide">
+        <h1 className="text-[30px] md:text-[40px] font-semibold tracking-wide text-nowrap">
           Hello! I&apos;m Kayode
         </h1>
         <div className="flex flex-col md:flex-row gap-2 md:gap-5 md:items-center">
-          <h1 className="text-[35px] md:text-[40px] font-semibold tracking-wide text-[#5D48E8] dark:text-[#AFA3FF]">
+          <h1 className="text-[30px] md:text-[40px] font-semibold tracking-wide text-[#5D48E8] dark:text-[#AFA3FF]">
             Fullstack Developer
           </h1>
           <div className="py-[10px] pr-4 pl-[10px] flex gap-2 justify-center items-center w-fit h-fit bg-[#F7F7F8] dark:bg-[#282828] rounded-[10px] shadow border border-black/10 text-black/60 dark:text-white/60">

@@ -62,16 +62,42 @@ export const projects = [
         "Enhanced my skills in building fullstack applications",
       ],
     },
-    image: ['flavourfulmenus/home', 'flavourfulmenus/menu', 'flavourfulmenus/about', 'flavourfulmenus/contact', 'flavourfulmenus/cart', 'flavourfulmenus/checkout', 'flavourfulmenus/payment-gateway'],
+    image: [
+      "flavourfulmenus/home",
+      "flavourfulmenus/menu",
+      "flavourfulmenus/about",
+      "flavourfulmenus/contact",
+      "flavourfulmenus/cart",
+      "flavourfulmenus/checkout",
+      "flavourfulmenus/payment-gateway",
+    ],
     gitHubUrl: "https://github.com/KAYZI2HIGH/flavourfulmenus",
     url: "https://flavourfulmenus.vercel.app/",
     techStack: [
-      "Next.js",
-      "Tailwind",
-      "Sanity CMS",
-      "Context API",
-      "Paystack",
-      "Vercel",
+      {
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
+        name: "Next.js",
+      },
+      {
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+        name: "Tailwind",
+      },
+      {
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sanity/sanity-original.svg",
+        name: "Sanity CMS",
+      },
+      {
+        icon: "",
+        name: "Context API",
+      },
+      {
+        icon: "",
+        name: "Paystack",
+      },
+      {
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original.svg",
+        name: "Vercel",
+      },
     ],
   },
   {
@@ -99,11 +125,26 @@ export const projects = [
     gitHubUrl: "https://github.com/KAYZI2HIGH/ai-text-processor",
     url: "https://ai-text-processor-omega.vercel.app/",
     techStack: [
-      "Next.js",
-      "Tailwind",
-      "Chrome API",
-      "AI-powered processing",
-      "Vercel",
+      {
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
+        name: "Next.js",
+      },
+      {
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+        name: "Tailwind",
+      },
+      {
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/chrome/chrome-original.svg",
+        name: "Chrome API",
+      },
+      {
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/androidstudio/androidstudio-original.svg",
+        name: "AI-powered processing",
+      },
+      {
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original.svg",
+        name: "Vercel",
+      },
     ],
   },
   {
@@ -127,16 +168,38 @@ export const projects = [
         "Gained experience in creating a responsive video application",
       ],
     },
-    image: ["youtube-demo/home", "youtube-demo/channels", "youtube-demo/player"],
+    image: [
+      "youtube-demo/home",
+      "youtube-demo/channels",
+      "youtube-demo/player",
+    ],
     gitHubUrl: "https://github.com/KAYZI2HIGH/Youtube-Demo",
     url: "https://youtube-gray-ten.vercel.app/",
     techStack: [
-      "Tailwind",
-      "Framer Motion",
-      "React",
-      "Context API",
-      "Vercel",
-      "Rapid API",
+      {
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+        name: "Tailwind",
+      },
+      {
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/framermotion/framermotion-original.svg",
+        name: "Framer Motion",
+      },
+      {
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg",
+        name: "React",
+      },
+      {
+        icon: "",
+        name: "Context API",
+      },
+      {
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original.svg",
+        name: "Vercel",
+      },
+      {
+        icon: "",
+        name: "Rapid API",
+      },
     ],
   },
   {
@@ -163,7 +226,28 @@ export const projects = [
     image: ["amazon-demo/home", "amazon-demo/cart", "amazon-demo/orders"],
     gitHubUrl: "https://github.com/KAYZI2HIGH/Amazon",
     url: "https://amazon-alpha-pearl.vercel.app/",
-    techStack: ["Material UI", "Tailwind", "React", "Context API", "Vercel"],
+    techStack: [
+      {
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/materialui/materialui-original.svg",
+        name: "Material UI",
+      },
+      {
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+        name: "Tailwind",
+      },
+      {
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg",
+        name: "React",
+      },
+      {
+        icon: "",
+        name: "Context API",
+      },
+      {
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original.svg",
+        name: "Vercel",
+      },
+    ],
   },
   {
     name: "YCDirectory",
@@ -179,16 +263,44 @@ export const projects = [
       "Secure and scalable architecture",
     ],
     techStack: [
-      "Tailwind",
-      "Material UI",
-      "Next.js",
-      "Sanity",
-      "Cloudinary",
-      "NextAuth",
-      "Sentry",
-      "Vercel",
+      {
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+        name: "Tailwind",
+      },
+      {
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/materialui/materialui-original.svg",
+        name: "Material UI",
+      },
+      {
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
+        name: "Next.js",
+      },
+      {
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sanity/sanity-original.svg",
+        name: "Sanity CMS",
+      },
+      {
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cloudflare/cloudflare-original.svg",
+        name: "Cloudinary",
+      },
+      {
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/oauth/oauth-original.svg",
+        name: "Auth.js",
+      },
+      {
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sentry/sentry-original.svg",
+        name: "sentry",
+      },
+      {
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original.svg",
+        name: "Vercel",
+      },
     ],
-    image: ["ycdirectory/home", "ycdirectory/create", "ycdirectory/pitchDetails"],
+    image: [
+      "ycdirectory/home",
+      "ycdirectory/create",
+      "ycdirectory/pitchDetails",
+    ],
     projectDetails: {
       duration: "6 weeks",
       teamSize: 1,
@@ -201,108 +313,114 @@ export const projects = [
     gitHubUrl: "https://github.com/KAYZI2HIGH/ycdirectory", // Replace with the actual repo link
     url: "https://ycdirectory-seven.vercel.app/", // Replace with the actual deployment link
   },
-  {
-    name: "Baynedad Property Manager",
-    description: `A full-stack property management application built with Next.js. It allows users to manage properties, upload images, and handle authentication seamlessly.`,
-    category: "fullstack",
-    about: `This project was designed to streamline property management tasks. It integrates Cloudinary for secure image storage and NextAuth for robust user authentication. The focus was on creating a modern, responsive application to cater to both property managers and their clients.`,
-    keyFeatures: [
-      "User authentication with NextAuth",
-      "Cloudinary integration for image uploads",
-      "Dynamic property listing management",
-      "Responsive and modern user interface",
-      "Secure and scalable architecture",
-    ],
-    techStack: [
-      "Next.js",
-      "Tailwind",
-      "Cloudinary",
-      "NextAuth",
-      "MongoDB",
-      "Mongoose",
-      "Vercel",
-    ],
-    image: ["baynedad/home", "baynedad/listings", "baynedad/addProperty", "baynedad/contact", "baynedad/login"],
-    projectDetails: {
-      duration: "7 weeks",
-      teamSize: 1,
-      outcomes: [
-        "Deepened my understanding of full-stack development with Next.js",
-        "Enhanced skills in integrating third-party services like Cloudinary and NextAuth",
-        "Gained experience in building scalable and user-friendly applications",
-      ],
-      // Update with your image reference
-    },
-    gitHubUrl: "https://github.com/KAYZI2HIGH/baynedad", // Replace with the actual repo link
-    url: "https://baynedad.vercel.app/", // Replace with the actual deployment link
-  },
+  // {
+  //   name: "Baynedad Property Manager",
+  //   description: `A full-stack property management application built with Next.js. It allows users to manage properties, upload images, and handle authentication seamlessly.`,
+  //   category: "fullstack",
+  //   about: `This project was designed to streamline property management tasks. It integrates Cloudinary for secure image storage and NextAuth for robust user authentication. The focus was on creating a modern, responsive application to cater to both property managers and their clients.`,
+  //   keyFeatures: [
+  //     "User authentication with NextAuth",
+  //     "Cloudinary integration for image uploads",
+  //     "Dynamic property listing management",
+  //     "Responsive and modern user interface",
+  //     "Secure and scalable architecture",
+  //   ],
+  //   techStack: [
+  //     "Next.js",
+  //     "Tailwind",
+  //     "Cloudinary",
+  //     "NextAuth",
+  //     "MongoDB",
+  //     "Mongoose",
+  //     "Vercel",
+  //   ],
+  //   image: [
+  //     "baynedad/home",
+  //     "baynedad/listings",
+  //     "baynedad/addProperty",
+  //     "baynedad/contact",
+  //     "baynedad/login",
+  //   ],
+  //   projectDetails: {
+  //     duration: "7 weeks",
+  //     teamSize: 1,
+  //     outcomes: [
+  //       "Deepened my understanding of full-stack development with Next.js",
+  //       "Enhanced skills in integrating third-party services like Cloudinary and NextAuth",
+  //       "Gained experience in building scalable and user-friendly applications",
+  //     ],
+  //     // Update with your image reference
+  //   },
+  //   gitHubUrl: "https://github.com/KAYZI2HIGH/baynedad", // Replace with the actual repo link
+  //   url: "https://baynedad.vercel.app/", // Replace with the actual deployment link
+  // },
 
-  {
-    name: "Champions Webpage.",
-    description: `I created a church website to enhance community engagement with event schedules, online testimonies, and a contact section. Built with React, it’s mobile-friendly and adapts to all screen sizes.`,
-    category: "frontend",
-    about: `The Champions Webpage is designed to foster community connection and engagement. The platform showcases upcoming events, provides a section for online testimonies, and includes an easily accessible contact form. The goal was to create a welcoming and user-friendly experience that helps strengthen the church's online presence.`,
-    keyFeatures: [
-      "Event schedule display",
-      "Online testimonies section",
-      "Responsive and mobile-friendly design",
-      "Interactive contact form",
-      "Smooth animations using Framer Motion",
-    ],
-    projectDetails: {
-      duration: "2 days",
-      teamSize: 1,
-      outcomes: [
-        "Successfully developed a responsive and interactive website",
-        "Improved user engagement through event schedules and testimonies",
-        "Learned to implement smooth animations with Framer Motion",
-      ],
-    },
-    image: ["project1"],
-    gitHubUrl: "https://github.com/KAYZI2HIGH/Champions",
-    url: "https://champions-pi.vercel.app/",
-    techStack: [
-      "Tailwind",
-      "Material UI",
-      "Framer Motion",
-      "React",
-      "Context API",
-      "Vercel",
-    ],
-  },
-  {
-    name: "My Porfolio.",
-    description: `I developed a portfolio website to showcase my projects and skills as a web developer. Built with React and Tailwind, it features a modern design, smooth navigation, and responsive layouts for all screen sizes.`,
-    category: "frontend",
-    about: `This portfolio website is designed to highlight my technical skills, projects, and achievements as a web developer. It provides visitors with a clear and interactive way to navigate my work and contact me. The focus was on creating a visually appealing design with smooth animations and responsive layouts.`,
-    keyFeatures: [
-      "Showcases projects with descriptions and links",
-      "Responsive layout for all devices",
-      "Smooth animations with Framer Motion",
-      "Dynamic routing for project details",
-      "Modern and minimalist UI design",
-    ],
-    projectDetails: {
-      duration: "4 days",
-      teamSize: 1,
-      outcomes: [
-        "Showcased my skills and work effectively",
-        "Gained experience in portfolio website design",
-        "Enhanced animation and layout design skills",
-      ],
-    },
-    image: ["project4"],
-    gitHubUrl: "https://github.com/KAYZI2HIGH/portfoliov2",
-    url: "https://portfoliov2-seven-delta.vercel.app/",
-    techStack: [
-      "Tailwind",
-      "Framer Motion",
-      "React",
-      "Context API",
-      "Next JS",
-      "Vercel",
-    ],
-  },
+  // {
+  //   name: "Champions Webpage.",
+  //   description: `I created a church website to enhance community engagement with event schedules, online testimonies, and a contact section. Built with React, it’s mobile-friendly and adapts to all screen sizes.`,
+  //   category: "frontend",
+  //   about: `The Champions Webpage is designed to foster community connection and engagement. The platform showcases upcoming events, provides a section for online testimonies, and includes an easily accessible contact form. The goal was to create a welcoming and user-friendly experience that helps strengthen the church's online presence.`,
+  //   keyFeatures: [
+  //     "Event schedule display",
+  //     "Online testimonies section",
+  //     "Responsive and mobile-friendly design",
+  //     "Interactive contact form",
+  //     "Smooth animations using Framer Motion",
+  //   ],
+  //   projectDetails: {
+  //     duration: "2 days",
+  //     teamSize: 1,
+  //     outcomes: [
+  //       "Successfully developed a responsive and interactive website",
+  //       "Improved user engagement through event schedules and testimonies",
+  //       "Learned to implement smooth animations with Framer Motion",
+  //     ],
+  //   },
+  //   image: ["project1"],
+  //   gitHubUrl: "https://github.com/KAYZI2HIGH/Champions",
+  //   url: "https://champions-pi.vercel.app/",
+  //   techStack: [
+  //     "Tailwind",
+  //     "Material UI",
+  //     "Framer Motion",
+  //     "React",
+  //     "Context API",
+  //     "Vercel",
+  //   ],
+  // },
+  // {
+  //   name: "My Porfolio.",
+  //   description: `I developed a portfolio website to showcase my projects and skills as a web developer. Built with React and Tailwind, it features a modern design, smooth navigation, and responsive layouts for all screen sizes.`,
+  //   category: "frontend",
+  //   about: `This portfolio website is designed to highlight my technical skills, projects, and achievements as a web developer. It provides visitors with a clear and interactive way to navigate my work and contact me. The focus was on creating a visually appealing design with smooth animations and responsive layouts.`,
+  //   keyFeatures: [
+  //     "Showcases projects with descriptions and links",
+  //     "Responsive layout for all devices",
+  //     "Smooth animations with Framer Motion",
+  //     "Dynamic routing for project details",
+  //     "Modern and minimalist UI design",
+  //   ],
+  //   projectDetails: {
+  //     duration: "4 days",
+  //     teamSize: 1,
+  //     outcomes: [
+  //       "Showcased my skills and work effectively",
+  //       "Gained experience in portfolio website design",
+  //       "Enhanced animation and layout design skills",
+  //     ],
+  //   },
+  //   image: ["project4"],
+  //   gitHubUrl: "https://github.com/KAYZI2HIGH/portfoliov2",
+  //   url: "https://portfoliov2-seven-delta.vercel.app/",
+  //   techStack: [
+  //     "Tailwind",
+  //     "Framer Motion",
+  //     "React",
+  //     "Context API",
+  //     "Next JS",
+  //     "Vercel",
+  //   ],
+  // },
 ];
 
 export const ABOUTME = {

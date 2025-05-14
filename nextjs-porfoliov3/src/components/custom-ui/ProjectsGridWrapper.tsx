@@ -15,15 +15,24 @@ const ProjectsGridWrapper = async ({
   
   const projects = await client.fetch<SanityDocument[]>(QUERY, {}, option)
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 gap-[38px] md:gap-6 mx-auto">
+    <div className="grid grid-cols-1 sm:grid-cols-2 gap-[38px] md:gap-6 mx-auto w-full">
       {projects.map((project, idx) => {
-        if (idx <= 3) {
+        if (type === 'AllProjects') {
           return (
             <ProjectCard
               key={idx}
               project={project}
             />
           );
+        } else if (type === 'FavouriteProjects') {
+          if (idx <= 3) {
+            return (
+              <ProjectCard
+                key={idx}
+                project={project}
+              />
+            );
+          }
         }
       })}
     </div>

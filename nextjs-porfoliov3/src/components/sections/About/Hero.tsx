@@ -8,10 +8,10 @@ const Hero = ({ABOUTME}: {ABOUTME: SanityDocument}) => {
     <div className="flex flex-col sm:flex-row gap-10">
       <div className="w-full space-y-6">
         <div>
-          <h1 className="text-[32px] md:text-[40px] font-semibold tracking-wide capitalize">
+          <h1 className="text-[30px] md:text-[40px] font-semibold tracking-wide capitalize">
             {ABOUTME.name}
           </h1>
-          <h1 className="text-[32px] md:text-[40px] font-semibold tracking-wide opacity-60 capitalize">
+          <h1 className="text-[30px] md:text-[40px] font-semibold tracking-wide opacity-60 capitalize">
             {ABOUTME.profession}
           </h1>
         </div>

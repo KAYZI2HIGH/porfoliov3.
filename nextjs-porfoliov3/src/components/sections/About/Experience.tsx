@@ -17,22 +17,23 @@ const Experience = ({ ABOUTME }: { ABOUTME: SanityDocument }) => {
           <Fragment key={idx}>
             <div
               className="
-          flex gap-6 items-start
-          relative p-6 rounded-xl
-          transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]
-          hover:shadow-[0_25px_50px_-12px_rgba(0,0,0,0.15)] dark:hover:shadow-[0_25px_50px_-12px_rgba(0,0,0,0.3)]
-          hover:bg-white/70 dark:hover:bg-[#282828]/60
-          before:absolute before:inset-0 before:rounded-xl
-          before:bg-[radial-gradient(400px_circle_at_var(--mouse-x)_var(--mouse-y),rgba(255,255,255,0.8),transparent_60%)]
-          dark:before:bg-[radial-gradient(400px_circle_at_var(--mouse-x)_var(--mouse-y),rgba(255,255,255,0.15),transparent_70%)]
-          before:opacity-0 hover:before:opacity-100
-          before:transition-opacity before:duration-500
-          after:absolute after:inset-0 after:rounded-xl
-          after:border after:border-transparent
-          hover:after:border-gray-200/50 dark:hover:after:border-white/15
-          after:transition-all after:duration-500
-          group
-        "
+              group relative sm:flex items-start gap-6 p-6 rounded-xl 
+              transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]
+              hover:shadow-[0_25px_50px_-12px_rgba(0,0,0,0.15)] 
+              dark:hover:shadow-[0_25px_50px_-12px_rgba(0,0,0,0.3)]
+              hover:bg-white/70 dark:hover:bg-[#282828]/60
+            
+              before:absolute before:inset-0 before:rounded-xl 
+              before:bg-[radial-gradient(400px_circle_at_var(--mouse-x)_var(--mouse-y),rgba(255,255,255,0.8),transparent_60%)] 
+              dark:before:bg-[radial-gradient(400px_circle_at_var(--mouse-x)_var(--mouse-y),rgba(255,255,255,0.15),transparent_70%)] 
+              before:opacity-0 hover:before:opacity-100 
+              before:transition-opacity before:duration-500
+            
+              after:absolute after:inset-0 after:rounded-xl 
+              after:border after:border-transparent 
+              hover:after:border-gray-200/50 dark:hover:after:border-white/15 
+              after:transition-all after:duration-500
+            "
               onMouseMove={(e) => {
                 const rect = e.currentTarget.getBoundingClientRect();
                 e.currentTarget.style.setProperty(
@@ -48,15 +49,15 @@ const Experience = ({ ABOUTME }: { ABOUTME: SanityDocument }) => {
               {/* Logo with dual-mode 3D effect */}
               <div
                 className="
-          w-[64px] aspect-square relative rounded-[10px] overflow-hidden
-          transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)]
-          group-hover:rotate-[5deg] group-hover:scale-105
-          shadow-lg group-hover:shadow-xl
-          bg-white/90 dark:bg-[#383838]
-        "
+                w-[64px] aspect-square relative rounded-[10px] overflow-hidden 
+                transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)]
+                group-hover:rotate-[5deg] group-hover:scale-105 
+                shadow-lg group-hover:shadow-xl 
+                bg-white/90 dark:bg-[#383838] hidden sm:flex
+              "
               >
                 <Image
-                  src={urlFor(experience.companyLogo)?.url() || ''}
+                  src={urlFor(experience.companyLogo)?.url() || ""}
                   alt={experience.companyName}
                   fill
                   className="object-cover transition-transform duration-300 group-hover:scale-95"
@@ -64,45 +65,106 @@ const Experience = ({ ABOUTME }: { ABOUTME: SanityDocument }) => {
               </div>
 
               {/* Content with mode-aware animations */}
-              <div className="w-full space-y-3 relative z-10">
+              <div className="flex items-start gap-6 sm:hidden">
+                <div
+                  className="
+                w-[64px] aspect-square relative rounded-[10px] overflow-hidden 
+                transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)]
+                group-hover:rotate-[5deg] group-hover:scale-105 
+                shadow-lg group-hover:shadow-xl 
+                bg-white/90 dark:bg-[#383838]
+              "
+                >
+                  <Image
+                    src={urlFor(experience.companyLogo)?.url() || ""}
+                    alt={experience.companyName}
+                    fill
+                    className="object-cover transition-transform duration-300 group-hover:scale-95"
+                  />
+                </div>
                 <div className="space-y-1">
                   <p
                     className="
-              text-[16px] font-bold tracking-wide
-              transition-transform duration-500
-              group-hover:translate-x-1
-              text-gray-900 dark:text-gray-100
-            "
+                    text-[16px] font-bold tracking-wide 
+                    transition-transform duration-500 
+                    group-hover:translate-x-1 
+                    text-gray-900 dark:text-gray-100
+                  "
                   >
                     {experience.role}
                   </p>
                   <p
                     className="
-              text-[14px] font-semibold tracking-wide
-              transition-all duration-500 delay-75
-              group-hover:translate-x-1 opacity-60 group-hover:opacity-80 dark:group-hover:opacity-80
-            "
+                    text-[14px] font-semibold tracking-wide 
+                    transition-all duration-500 delay-75 
+                    group-hover:translate-x-1 
+                    opacity-60 group-hover:opacity-80 dark:group-hover:opacity-80
+                  "
                   >
                     {experience.companyName}
                   </p>
                   <p
                     className="
-              text-[14px] font-semibold tracking-wide
-              transition-all duration-500 delay-100
-              group-hover:translate-x-1 opacity-60
-              group-hover:opacity-90 dark:group-hover:opacity-80
-            "
+                    text-[14px] font-semibold tracking-wide 
+                    transition-all duration-500 delay-100 
+                    group-hover:translate-x-1 
+                    opacity-60 group-hover:opacity-90 dark:group-hover:opacity-80
+                  "
+                  >
+                    {experience.duration}
+                  </p>
+                </div>
+              </div>
+              <p
+                className="
+                  font-semibold 
+                  transition-all duration-500 delay-150 
+                  group-hover:translate-x-1 
+                  text-gray-700 dark:text-gray-300 sm:hidden mt-4
+                "
+              >
+                {experience.description}
+              </p>
+              <div className="w-full space-y-3 relative z-10 hidden sm:block">
+                <div className="space-y-1">
+                  <p
+                    className="
+                    text-[16px] font-bold tracking-wide 
+                    transition-transform duration-500 
+                    group-hover:translate-x-1 
+                    text-gray-900 dark:text-gray-100
+                  "
+                  >
+                    {experience.role}
+                  </p>
+                  <p
+                    className="
+                    text-[14px] font-semibold tracking-wide 
+                    transition-all duration-500 delay-75 
+                    group-hover:translate-x-1 
+                    opacity-60 group-hover:opacity-80 dark:group-hover:opacity-80
+                  "
+                  >
+                    {experience.companyName}
+                  </p>
+                  <p
+                    className="
+                    text-[14px] font-semibold tracking-wide 
+                    transition-all duration-500 delay-100 
+                    group-hover:translate-x-1 
+                    opacity-60 group-hover:opacity-90 dark:group-hover:opacity-80
+                  "
                   >
                     {experience.duration}
                   </p>
                 </div>
                 <p
                   className="
-            font-semibold
-            transition-all duration-500 delay-150
-            group-hover:translate-x-1
-            text-gray-700 dark:text-gray-300
-          "
+                  font-semibold 
+                  transition-all duration-500 delay-150 
+                  group-hover:translate-x-1 
+                  text-gray-700 dark:text-gray-300
+                "
                 >
                   {experience.description}
                 </p>
@@ -110,10 +172,10 @@ const Experience = ({ ABOUTME }: { ABOUTME: SanityDocument }) => {
             </div>
             <Separator
               className="
-        transition-all duration-700 delay-200
-        group-hover:opacity-0
-        bg-gray-200/60 dark:bg-gray-700/50
-      "
+             transition-all duration-700 delay-200 
+             group-hover:opacity-0 
+             bg-gray-200/60 dark:bg-gray-700/50
+           "
             />
           </Fragment>
         ))}
