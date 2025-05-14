@@ -5,7 +5,7 @@ import { PROJECT_QUERY_BY_ID } from "@/lib/queries";
 import { option } from "@/lib/Revalidate";
 import { Project } from "@/lib/type";
 import { client } from "@/sanity/client";
-import { ChevronLeft, ExternalLink, FileSearch } from "lucide-react";
+import { ChevronLeft, ExternalLink } from "lucide-react";
 import Swiper from '@/components/sections/Projects/Swiper'
 import Link from "next/link";
 import React, { JSX } from "react";

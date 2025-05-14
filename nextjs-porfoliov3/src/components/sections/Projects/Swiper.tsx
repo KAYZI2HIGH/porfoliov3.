@@ -36,7 +36,7 @@ const ImageSlider = ({ images }: { images: SanityImageObject[] }) => {
         return (
           <SwiperSlide key={index}>
             <Image
-              src={urlFor(image)?.url() || ""}
+              src={urlFor(image)?.width(519).height(300).url() || ""}
               alt={"Project Images"}
               fill
             />
