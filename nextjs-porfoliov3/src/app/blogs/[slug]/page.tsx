@@ -21,10 +21,7 @@ const page = async ({ params }: { params: Promise<{ slug: string }> }) => {
     <div className="flex flex-col gap-[40px] sm:gap-[80px]">
       <div className="space-y-10 md:space-y-[80px]">
         <div className="space-y-1">
-          <BackButton
-            children={"Back to List"}
-            href="/blogs"
-          />
+          <BackButton href="/blogs">Back to List</BackButton>
           <Separator />
         </div>
 
@@ -58,7 +55,7 @@ const page = async ({ params }: { params: Promise<{ slug: string }> }) => {
           alt={blogDetails.title}
         />
       </div>
-      <PortableText blocks={blogDetails.body}/>
+      <PortableText blocks={blogDetails.body} />
       <Separator />
     </div>
   );

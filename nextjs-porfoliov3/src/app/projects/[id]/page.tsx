@@ -5,7 +5,7 @@ import { PROJECT_QUERY_BY_ID } from "@/lib/queries";
 import { option } from "@/lib/Revalidate";
 import { Project } from "@/lib/type";
 import { client } from "@/sanity/client";
-import { ChevronLeft, ExternalLink } from "lucide-react";
+import {  ExternalLink } from "lucide-react";
 import Swiper from '@/components/sections/Projects/Swiper'
 import Link from "next/link";
 import React, { JSX } from "react";
@@ -26,7 +26,7 @@ export default async function Page({ params }: Props): Promise<JSX.Element> {
     <div className="flex flex-col gap-[40px] sm:gap-[80px]">
       <div className="space-y-10 md:space-y-[80px]">
         <div className="space-y-1">
-         <BackButton children={'Back to List'} href="/projects"/>
+          <BackButton href="/projects">Back to List</BackButton>
           <Separator />
         </div>
 
@@ -68,11 +68,11 @@ export default async function Page({ params }: Props): Promise<JSX.Element> {
       </div>
 
       <div className="w-full aspect-video relative rounded-[12px] overflow-hidden border-2 border-black/40 dark:border-white/40 shadow-md">
-        <Swiper images={projectDetials.image}/>
+        <Swiper images={projectDetials.image} />
       </div>
 
       <ProjectDescription projectDetials={projectDetials} />
-      <Separator/>
+      <Separator />
     </div>
   );
 }
