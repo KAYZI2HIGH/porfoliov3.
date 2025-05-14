@@ -12,7 +12,7 @@ const BlogWrapper = async ({
 }) => {
   const blogs = await client.fetch<SanityDocument[]>(BLOGS_QUERY, {}, option);
   return (
-    <div className="space-y-[25px] md:space-y-[32px]">
+    <div className="space-y-[50px] md:space-y-[32px]">
       {blogs.map((blog, idx) => {
         if (type === "all-blog") {
           return (

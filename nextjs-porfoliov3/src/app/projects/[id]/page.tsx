@@ -9,6 +9,7 @@ import { ChevronLeft, ExternalLink } from "lucide-react";
 import Swiper from '@/components/sections/Projects/Swiper'
 import Link from "next/link";
 import React, { JSX } from "react";
+import BackButton from "@/components/custom-ui/BackButton";
 
 type Props = {
   params: Promise<{ id: string }>;
@@ -25,9 +26,7 @@ export default async function Page({ params }: Props): Promise<JSX.Element> {
     <div className="flex flex-col gap-[40px] sm:gap-[80px]">
       <div className="space-y-10 md:space-y-[80px]">
         <div className="space-y-1">
-          <Button variant={"link"}>
-            <ChevronLeft /> Back to List
-          </Button>
+         <BackButton children={'Back to List'} href="/projects"/>
           <Separator />
         </div>
 
