@@ -16,6 +16,7 @@ import Link from "next/link";
 import { useRef, useState } from "react";
 import { Button } from "./button";
 import { ModeToggle } from "../ModeToggle";
+import { Menu } from "lucide-react";
 
 export const FloatingDock = ({
   items,
@@ -74,13 +75,13 @@ const FloatingDockMobile = ({
                 transition={{ delay: (items.length - 1 - idx) * 0.05 }}
               >
                 {item.title === "Mode Toggler" ?
-                  <ModeToggle />
+                  <ModeToggle className="flex h-[50px] w-[50px] items-center justify-center rounded-full bg-gray-200 dark:bg-neutral-800/40 overflow-hidden" />
                 : <Link
                     href={item.href}
                     key={item.title}
-                    className="flex h-10 w-10 items-center justify-center rounded-full bg-gray-200 dark:bg-neutral-800/40 overflow-hidden"
+                    className="flex h-[40px] w-[40px] items-center justify-center rounded-full bg-gray-200 dark:bg-neutral-800/40 overflow-hidden"
                   >
-                    <div className="h-4 w-4">{item.icon}</div>
+                    <div className="h-5 w-5">{item.icon}</div>
                   </Link>
                 }
               </motion.div>
@@ -90,9 +91,9 @@ const FloatingDockMobile = ({
       </AnimatePresence>
       <Button
         onClick={() => setOpen(!open)}
-        className="flex h-10 w-10 items-center justify-center rounded-full bg-gray-300 dark:bg-neutral-800 mb-2"
+        className="flex h-[50px] w-[50px] items-center justify-center rounded-full bg-gray-300/80 dark:bg-neutral-800/80 mb-2 hover:bg-gray-300 dark:hover:bg-neutral-800 "
       >
-        <IconLayoutNavbarCollapse className="h-5 w-5 text-black dark:text-neutral-400" />
+        <Menu className="h-10 w-10 text-black dark:text-neutral-400" />
       </Button>
     </div>
   );

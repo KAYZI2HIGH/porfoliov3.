@@ -13,7 +13,10 @@ export function ModeToggle({ className }: { className?: string }) {
   return (
     <Button
       variant="ghost"
-      className={cn(" min-w-full min-h-full z-40 backdrop-blur-lg", className)}
+      className={cn(
+        "md:w-full md:h-full bg-gray-300/80 dark:bg-neutral-800/80 mb-2 hover:bg-gray-300 dark:hover:bg-neutral-800 z-40 backdrop-blur-lg",
+        className
+      )}
       onClick={() => (theme === "light" ? setTheme("dark") : setTheme("light"))}
     >
       <Sun className="absolute size-[60%] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
