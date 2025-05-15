@@ -36,6 +36,8 @@ type Project = {
   name: string;
   description: string;
   category: "fullstack" | "frontend";
+  service: string,
+  client: string,
   about: string;
   keyFeatures: string[];
   projectDetails: ProjectDetails;

@@ -63,21 +63,21 @@ export default async function Page({ params }: Props): Promise<JSX.Element> {
 
           <div className="flex flex-col md:flex-row justify-between md:items-center gap-6">
             <div>
-              <p className="opacity-70">Date</p>
+              <p className="opacity-70">Duration</p>
               <p className="text-[14px] font-semibold tracking-wider mt-1">
-                2023 - 2024
+                {projectDetials.projectDetails.duration}
               </p>
             </div>
             <div>
               <p className="opacity-70">Service</p>
               <p className="text-[14px] font-semibold tracking-wider mt-1">
-                UI/UX Design + Frontend
+                {projectDetials.service}
               </p>
             </div>
             <div>
               <p className="opacity-70">Client</p>
               <p className="text-[14px] font-semibold tracking mt-1">
-                VirtusLab
+                {projectDetials.client}
               </p>
             </div>
           </div>

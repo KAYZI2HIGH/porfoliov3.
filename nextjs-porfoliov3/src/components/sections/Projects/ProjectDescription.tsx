@@ -85,47 +85,45 @@ const ProjectDescription = ({
         </div>
       </div>
 
-      <div className="p-8 bg-slate-200/30 dark:bg-[#1F2937] rounded-lg w-full">
-        <div className="pb-7 border-b flex flex-col gap-4">
-          <h1 className="capitalize text-[20px] font-semibold tracking-wide">
-            Project Details ({projectDetials.category})
-          </h1>
-          <div className="space-y-4">
-            <div className="flex justify-center items-center gap-4 w-fit">
-              <Calendar size={18} />
-              <div className="flex flex-col gap-1 font-medium">
-                <p className="text-gray-500 dark:text-gray-300">Duration</p>
-                <p className="font-semibold">
-                  {projectDetials.projectDetails.duration}
-                </p>
-              </div>
+      <div className="pb-7 border-b flex flex-col gap-4 mt-5">
+        <h1 className="capitalize text-[23px] font-semibold tracking-wide">
+          Project Details ({projectDetials.category})
+        </h1>
+        <div className="space-y-4">
+          <div className="flex justify-center items-center gap-4 w-fit">
+            <Calendar size={18} />
+            <div className="flex flex-col gap-1 font-medium">
+              <p className="text-gray-500 dark:text-gray-300">Duration</p>
+              <p className="font-semibold">
+                {projectDetials.projectDetails.duration}
+              </p>
             </div>
-            <div className="flex justify-center items-center gap-4 w-fit">
-              <Users size={18} />
-              <div className="flex flex-col gap-1 font-medium">
-                <p className="text-gray-500 dark:text-gray-300">Team Size</p>
-                <p className="font-semibold">
-                  {projectDetials.projectDetails.teamSize} Developer
-                </p>
-              </div>
+          </div>
+          <div className="flex justify-center items-center gap-4 w-fit">
+            <Users size={18} />
+            <div className="flex flex-col gap-1 font-medium">
+              <p className="text-gray-500 dark:text-gray-300">Team Size</p>
+              <p className="font-semibold">
+                {projectDetials.projectDetails.teamSize} Developer
+              </p>
             </div>
           </div>
         </div>
-        <div className="mt-7 flex flex-col gap-4">
-          <h1 className="text-[20px] font-semibold tracking-wide">
-            Project Outcomes
-          </h1>
-          <ul className="space-y-3 pl-8">
-            {projectDetials.projectDetails.outcomes.map((outcome, index) => (
-              <li
-                key={index}
-                className=" list-disc "
-              >
-                <p className="opacity-60"> {outcome}</p>
-              </li>
-            ))}
-          </ul>
-        </div>
+      </div>
+      <div className="mt-7 flex flex-col gap-4">
+        <h1 className="text-[23px] font-semibold tracking-wide">
+          Project Outcomes
+        </h1>
+        <ul className="space-y-3 pl-8">
+          {projectDetials.projectDetails.outcomes.map((outcome, index) => (
+            <li
+              key={index}
+              className=" list-disc "
+            >
+              <p className="opacity-60"> {outcome}</p>
+            </li>
+          ))}
+        </ul>
       </div>
     </>
   );
