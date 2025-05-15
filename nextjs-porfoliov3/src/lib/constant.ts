@@ -1,4 +1,20 @@
-import { Database, GaugeCircle, GitBranch, MessageCircle, Paintbrush, Server, Store } from "lucide-react";
+import {
+  Database,
+  GaugeCircle,
+  GitBranch,
+  MessageCircle,
+  Paintbrush,
+  Server,
+  Store,
+} from "lucide-react";
+import {
+  IconBrandGithub,
+  IconBrandX,
+  IconExchange,
+  IconHome,
+  IconNewSection,
+  IconTerminal2,
+} from "@tabler/icons-react";
 
 export const services = [
   {
@@ -530,3 +546,42 @@ export const ABOUTME = {
     },
   ],
 };
+export const links = [
+  {
+    title: "Home",
+    icon: IconHome,
+    href: "#",
+  },
+
+  {
+    title: "Products",
+    icon: IconTerminal2,
+    href: "#",
+  },
+  {
+    title: "Components",
+    icon: IconNewSection,
+    href: "#",
+  },
+  {
+    title: "Aceternity UI",
+    icon: "https://assets.aceternity.com/logo-dark.png",
+    href: "#",
+  },
+  {
+    title: "Changelog",
+    icon: IconExchange,
+    href: "#",
+  },
+
+  {
+    title: "Twitter",
+    icon: IconBrandX,
+    href: "#",
+  },
+  {
+    title: "GitHub",
+    icon: IconBrandGithub,
+    href: "#",
+  },
+];

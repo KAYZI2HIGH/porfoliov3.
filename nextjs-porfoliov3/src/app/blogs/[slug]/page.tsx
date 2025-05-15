@@ -51,7 +51,7 @@ const page = async ({ params }: { params: Promise<{ slug: string }> }) => {
         </div>
 
         <div className="space-y-5">
-          <h1 className="text-[32px] font-semibold tracking-wide">
+          <h1 className="text-[28px] sm:text-[32px] font-semibold tracking-wide">
             {blogDetails.title}
           </h1>
 

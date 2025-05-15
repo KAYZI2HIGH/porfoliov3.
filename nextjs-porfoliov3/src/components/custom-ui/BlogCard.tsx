@@ -36,7 +36,7 @@ const BlogCard = ({
           <p className="text-[14px] font-semibold opacity-60">
             {new Date(date).toDateString()}
           </p>
-          <h3 className="text-[23px] font-semibold tracking-wide">{title}</h3>
+          <h3 className="text-[20px] sm:text-[23px] font-semibold tracking-wide">{title}</h3>
         </div>
         <div>
           <Separator />
