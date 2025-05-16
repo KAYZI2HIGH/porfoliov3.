@@ -1,5 +1,4 @@
 "use client";
-import { Separator } from "@/components/ui/separator";
 import { type Education } from "@/lib/type";
 import { urlFor } from "@/lib/utils";
 import { SanityDocument } from "next-sanity";
