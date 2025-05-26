@@ -44,7 +44,7 @@ export default function RootLayout({
               {children}
               <ContactDetails />
               <Footer />
-              <FloatingDockWithLink className="fixed -top-1/2 sm:top-0 translate-y-[24%] sm:-bottom-1/2 sm:-translate-y-[35%] -right-[36%] sm:right-0 sm:left-1/2 sm:-translate-x-1/2 max-md:hidden" />
+              <FloatingDockWithLink className="fixed -top-1/2 sm:top-14 translate-y-[24%]  sm:-translate-y-[20%] -right-[36%] sm:right-0 sm:left-1/2 sm:-translate-x-1/2 max-md:hidden" />
               <ModeToggle className="fixed bottom-10 right-10 size-12 md:hidden"/>
             </div>
           </div>

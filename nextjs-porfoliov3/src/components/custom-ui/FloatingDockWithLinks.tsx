@@ -65,7 +65,7 @@ export function FloatingDockWithLink({className}: {className: string}) {
   ];
   return (
     <div
-      className={cn("flex items-center justify-center h-[35rem] w-full z-50", className)}
+      className={cn("flex items-center justify-center h-fit w-full z-50", className)}
     >
       <FloatingDock items={links} />
     </div>
