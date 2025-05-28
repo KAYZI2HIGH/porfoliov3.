@@ -15,6 +15,7 @@ const BackButton = ({
   return (
     <Button
       variant={"link"}
+      className="!px-0"
       onClick={() => router.replace(href)}
     >
       <ChevronLeft /> {children}

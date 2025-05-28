@@ -1,3 +1,4 @@
+import BackButton from "@/components/custom-ui/BackButton";
 import Education from "@/components/sections/About/Education";
 import Experience from "@/components/sections/About/Experience";
 import Hero from "@/components/sections/About/Hero";
@@ -24,6 +25,10 @@ const AboutPage = async () => {
   const aboutMe = aboutArray[0];
   return (
     <section className="flex flex-col gap-[40px] md:gap-[80px]">
+      <div className="space-y-1">
+        <BackButton href="/">Back to Home</BackButton>
+        <Separator />
+      </div>
       <Hero ABOUTME={aboutMe} />
       <Tools ABOUTME={aboutMe} />
       <Experience ABOUTME={aboutMe} />

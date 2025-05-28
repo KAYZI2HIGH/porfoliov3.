@@ -1,3 +1,4 @@
+import BackButton from "@/components/custom-ui/BackButton";
 import ProjectsGridWrapper from "@/components/custom-ui/ProjectsGridWrapper";
 import ProjectSkeleton from "@/components/custom-ui/ProjectSkeleton";
 import { Separator } from "@/components/ui/separator";
@@ -13,6 +14,10 @@ export const metadata: Metadata = {
 const page = () => {
   return (
     <section className="flex flex-col gap-[40px] sm:gap-[50px] w-full">
+      <div className="space-y-1">
+        <BackButton href="/">Back to Home</BackButton>
+        <Separator />
+      </div>
       <div>
         <h1 className="text-[32px] sm:text-[40px] font-semibold tracking-wide ">
           Projects
