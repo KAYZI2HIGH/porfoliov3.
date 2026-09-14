@@ -112,5 +112,12 @@ export const postType = defineType({
       type: 'boolean',
       validation: (rule) => rule.required(),
     }),
+    defineField({
+      name: 'displayOrder',
+      title: 'Display order',
+      description: 'Lower numbers appear first.',
+      type: 'number',
+      validation: (rule) => rule.integer().min(0),
+    }),
   ],
 })

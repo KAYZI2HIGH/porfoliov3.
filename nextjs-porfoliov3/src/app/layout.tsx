@@ -40,7 +40,7 @@ export default function RootLayout({
           enableSystem
         >
           <div className="w-screen bg-[#eeeeee] dark:bg-black py-4 px-3 text-black dark:text-white relative">
-            <div className="w-full  max-w-[800px] h-full mx-auto bg-white dark:bg-[#1A1A1A]/70 border border-black/10 shadow rounded-[12px] px-[20px] md:px-[64px] pt-[40px] pb-[20px] md:pt-[120px] md:pb-[40px] relative">
+            <div className="w-full  max-w-[950px] h-full mx-auto bg-white dark:bg-[#1A1A1A]/70 border border-black/10 shadow rounded-[12px] px-[20px] md:px-[64px] pt-[40px] pb-[20px] md:pt-[120px] md:pb-[40px] relative">
               {children}
               <ContactDetails />
               <Footer />
