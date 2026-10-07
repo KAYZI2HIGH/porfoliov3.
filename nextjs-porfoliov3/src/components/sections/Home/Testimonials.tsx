@@ -23,10 +23,16 @@ const Testimonials = ({ testimonials }: { testimonials: SanityDocument[] }) => {
               <ProfileAvatar
                 name={testimonial.name}
                 className=" size-[50px] rounded-[10px]"
-                image={testimonial.image ? urlFor(testimonial.image).width(100).height(100).url() : undefined}
+                image={
+                  testimonial.image ?
+                    urlFor(testimonial.image).width(100).height(100).url()
+                  : undefined
+                }
               />
               <div>
-                <h1 className="text-[14px] font-semibold">{testimonial.name}</h1>
+                <h1 className="text-[14px] font-semibold">
+                  {testimonial.name}
+                </h1>
                 <p className="text-[12px] opacity-70">
                   {testimonial.role} at {testimonial.company}
                 </p>

@@ -11,30 +11,28 @@ import Experience from "@/components/sections/About/Experience";
 import Education from "@/components/sections/About/Education";
 import { SanityDocument } from "next-sanity";
 
-
-
 export default async function Home() {
   const aboutArray = await client.fetch<SanityDocument[]>(
-      ABOUT_QUERY,
-      {},
-      option
-    );
-    const aboutMe = aboutArray[0];
-    const testimonials = await client.fetch<SanityDocument[]>(
-      TESTIMONIALS_QUERY,
-      {},
-      option
-    );
+    ABOUT_QUERY,
+    {},
+    option,
+  );
+  const aboutMe = aboutArray[0];
+  const testimonials = await client.fetch<SanityDocument[]>(
+    TESTIMONIALS_QUERY,
+    {},
+    option,
+  );
   return (
     <div className="flex flex-col gap-[50px] md:gap-[80px]">
-      <Hero/>
+      <Hero />
       <FavouriteProjects />
       <Tools ABOUTME={aboutMe} />
       <Experience ABOUTME={aboutMe} />
       <Education ABOUTME={aboutMe} />
-      <Separator/>
-      <Blogs/>
-      <Testimonials testimonials={testimonials}/>
+      <Separator />
+      <Blogs />
+      <Testimonials testimonials={testimonials} />
       <Separator />
     </div>
   );
