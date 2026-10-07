@@ -1,6 +1,7 @@
+// @ts-expect-error - Next.js requires this CSS import for global styles and TypeScript does not type-check CSS files.
+import "./globals.css";
 import type { Metadata } from "next";
 import { Mulish } from "next/font/google";
-import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import ContactDetails from "@/components/sections/Home/ContactDetails";
 import Footer from "@/components/sections/Home/Footer";
