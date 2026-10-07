@@ -1,4 +1,3 @@
-// @ts-expect-error - Next.js requires this CSS import for global styles and TypeScript does not type-check CSS files.
 import "./globals.css";
 import type { Metadata } from "next";
 import { Mulish } from "next/font/google";

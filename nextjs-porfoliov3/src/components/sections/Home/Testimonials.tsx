@@ -25,7 +25,7 @@ const Testimonials = ({ testimonials }: { testimonials: SanityDocument[] }) => {
                 className=" size-[50px] rounded-[10px]"
                 image={
                   testimonial.image ?
-                    urlFor(testimonial.image).width(100).height(100).url()
+                    urlFor(testimonial.image)?.width(100).height(100).url()
                   : undefined
                 }
               />
