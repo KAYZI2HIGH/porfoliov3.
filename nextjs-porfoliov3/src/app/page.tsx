@@ -4,7 +4,7 @@ import FavouriteProjects from "@/components/sections/Home/FavouriteProjects";
 import Testimonials from "@/components/sections/Home/Testimonials";
 import Blogs from "@/components/sections/Home/Blogs";
 import { client } from "@/sanity/client";
-import { ABOUT_QUERY } from "@/lib/queries";
+import { ABOUT_QUERY, TESTIMONIALS_QUERY } from "@/lib/queries";
 import { option } from "@/lib/Revalidate";
 import Tools from "@/components/sections/About/Tools";
 import Experience from "@/components/sections/About/Experience";
@@ -20,6 +20,11 @@ export default async function Home() {
       option
     );
     const aboutMe = aboutArray[0];
+    const testimonials = await client.fetch<SanityDocument[]>(
+      TESTIMONIALS_QUERY,
+      {},
+      option
+    );
   return (
     <div className="flex flex-col gap-[50px] md:gap-[80px]">
       <Hero/>
@@ -29,7 +34,7 @@ export default async function Home() {
       <Education ABOUTME={aboutMe} />
       <Separator/>
       <Blogs/>
-      <Testimonials/>
+      <Testimonials testimonials={testimonials}/>
       <Separator />
     </div>
   );

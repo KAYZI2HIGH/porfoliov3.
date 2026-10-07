@@ -9,3 +9,5 @@ export const BLOGS_QUERY = `*[_type == "blog"]{title, slug, author, publishedAt,
 export const BLOG_QUERY_BY_SLUG = `*[_type == "blog" && slug.current == $slug]{title, slug, author, publishedAt, image, body, topic}[0]`;
 
 export const ABOUT_QUERY = `*[_type == "about"]{name, profession, introduction, professionalSummary, image, tools, experience, education}`
+
+export const TESTIMONIALS_QUERY = `*[_type == "testimonial"]|order(displayOrder asc, _createdAt desc){_id, quote, name, role, company, image}`;
